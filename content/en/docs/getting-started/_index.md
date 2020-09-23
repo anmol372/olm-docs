@@ -17,7 +17,7 @@ These pages are under construction. TODO: Check Prerequisites and update
 
 - [git](https://git-scm.com/downloads)
 - [go](https://golang.org/dl/) version `v1.12+`.
-- [docker](https://docs.docker.com/install/) version `17.03`+ Or [podman](https://github.com/containers/libpod/blob/master/install.md) `v1.2.0+` Or [buildah](https://github.com/containers/buildah/blob/master/install.md) `v1.7+`.
+- [docker](https://docs.docker.com/install/) version `17.03`+ or [podman](https://github.com/containers/libpod/blob/master/install.md) `v1.2.0+` or [buildah](https://github.com/containers/buildah/blob/master/install.md) `v1.7+`.
 - [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) `v1.11.3+`.
 - Access to a Kubernetes `v1.11.3+` cluster.
 
@@ -27,9 +27,9 @@ These pages are under construction. TODO: Check Prerequisites and update
 For installing release versions of OLM, for example version 0.12.0, you can use the following command:
 
 ```sh
-export olm_release=0.15.1
-kubectl apply -f https://github.com/operator-framework/operator-lifecycle-manager/releases/download/${olm_release}/crds.yaml
-kubectl apply -f https://github.com/operator-framework/operator-lifecycle-manager/releases/download/${olm_release}/olm.yaml
+$ export olm_release=0.15.1
+$ kubectl apply -f https://github.com/operator-framework/operator-lifecycle-manager/releases/download/${olm_release}/crds.yaml
+$ kubectl apply -f https://github.com/operator-framework/operator-lifecycle-manager/releases/download/${olm_release}/olm.yaml
 ```
 
 Learn more about available releases [here](https://github.com/operator-framework/operator-lifecycle-manager/releases).
@@ -37,7 +37,7 @@ Learn more about available releases [here](https://github.com/operator-framework
 
 To deploy OLM locally on a [minikube cluster](https://kubernetes.io/docs/tasks/tools/install-minikube/) for development work, use the `run-local` target in the [Makefile](https://github.com/operator-framework/operator-lifecycle-manager/blob/master/Makefile).
 
-```sh
+```bash
 git clone https://github.com/operator-framework/operator-lifecycle-manager.git
 cd operator-lifecycle-manager
 make run-local
