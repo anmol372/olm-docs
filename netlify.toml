@@ -14,7 +14,7 @@
   command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy]
-  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+  command = "npm install postcss-cli autoprefixer@^9.0.0 &&  hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
 [[headers]]
   for = "*.webmanifest"
