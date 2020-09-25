@@ -24,7 +24,7 @@ These pages are under construction. TODO: Check Prerequisites and update
 ## Installing OLM in your cluster
 
 ### Install Released OLM
-For installing release versions of OLM, for example version 0.12.0, you can use the following command:
+For installing release versions of OLM, for example version 0.15.1, you can use the following command:
 
 ```sh
 $ export olm_release=0.15.1
