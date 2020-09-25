@@ -37,10 +37,10 @@ Learn more about available releases [here](https://github.com/operator-framework
 
 To deploy OLM locally on a [minikube cluster](https://kubernetes.io/docs/tasks/tools/install-minikube/) for development work, use the `run-local` target in the [Makefile](https://github.com/operator-framework/operator-lifecycle-manager/blob/master/Makefile).
 
-```bash
-git clone https://github.com/operator-framework/operator-lifecycle-manager.git
-cd operator-lifecycle-manager
-make run-local
+```sh
+$ git clone https://github.com/operator-framework/operator-lifecycle-manager.git
+$ cd operator-lifecycle-manager
+$ make run-local
 ```
 
 ### Verify Installation
